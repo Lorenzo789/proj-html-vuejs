@@ -1,23 +1,6 @@
 <template>
     <main class="container-fluid">
-        <div class="container p-2">
-            <img src="../assets/images/MasterStudy_logo.svg" alt="">
-            <p><i class="fa-solid fa-bars"></i> Category</p>
-            <!-- COMPONENT SEARCHBAR -->
-            <input type="text" placeholder="Search courses">
-            <button>Cerca</button>
-            <!-- COMPONENT SEARCHBAR -->
-
-            <p><i class="fa-solid fa-bullhorn"></i> Become an Instructor</p>
-            <p><i class="fa-solid fa-briefcase"></i> For Enterprise</p>
-            <p><i class="fa-solid fa-user"></i> Log In</p>
-
-            <!-- COMPONENT BUTTON -->
-            <button>SIGN</button>
-            <!-- COMPONENT BUTTON -->
-
-            <i class="fa-solid fa-bookmark"></i>
-        </div>
+        <NavBarMain />
 
         <div class="container p-2">
             <div class="row">
@@ -355,8 +338,12 @@
 </template>
 
 <script>
+import NavBarMain from "./NavBarMain.vue";
 export default {
-
+    data: function () {
+        return {};
+    },
+    components: { NavBarMain }
 }
 </script>
 

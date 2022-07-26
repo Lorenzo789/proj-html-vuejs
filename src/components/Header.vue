@@ -1,9 +1,7 @@
 <template>
   <header class="container-fluid border-bottom">
-    <div class="container d-flex justify-content-between align-items-center pt-3">
-        <ul>
-            <li class="ms_color d-inline">English <i class="fa-solid fa-angle-down"></i> </li>
-        </ul>
+    <div class="container d-flex justify-content-between align-items-baseline pt-3">
+            <h6 class="ms_color d-inline">English <i class="fa-solid fa-angle-down"></i> </h6>
 
         <div>
             <ul>
@@ -100,8 +98,5 @@ export default {
 <style lang="scss">
 @import'../styles/variables.scss';
 
-.ms_color_icon{
-    color: $textColor;
-}
 
 </style>
