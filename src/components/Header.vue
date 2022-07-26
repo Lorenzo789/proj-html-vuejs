@@ -14,36 +14,36 @@
             </ul>
         </div>
         <div>
-            <!-- COMPONENT PER LE ICONE -->
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <!-- NON FINITO MANCA IL QUADRATINO CON NEW ROSSO -->
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-brands fa-twitter"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-brands fa-behance"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-solid fa-basketball"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-solid fa-square-full"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-brands fa-git"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a class="ms_color_icon text-decoration-none px-2" href="#">
+            <a class="ms_color text-decoration-none px-2" href="#">
                 <i class="fa-brands fa-pinterest"></i>
             </a>
         </div>
@@ -101,7 +101,7 @@ export default {
 @import'../styles/variables.scss';
 
 .ms_color_icon{
-    color: $iconColor;
+    color: $textColor;
 }
 
 </style>
