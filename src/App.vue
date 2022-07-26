@@ -2,7 +2,9 @@
   <div id="app">
     <!-- 26/07/22 FINIRE HEADER E MINIMO UN PEZZO MAIN CSS INCLUSO -->
     <Header />
+
     <Main />
+
     <Footer />
   </div>
 </template>
@@ -20,9 +22,15 @@ export default {
     Main,
     Footer
   },
+  data: function(){
+    return{
+
+    }
+  }
 }
 </script>
 
 <style lang="scss">
+@import'../node_modules/bootstrap/dist/css/bootstrap.css';
 
 </style>
