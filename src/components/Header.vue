@@ -1,8 +1,8 @@
 <template>
-  <header class="container-fluid">
-    <div class="container d-flex justify-content-between">
+  <header class="container-fluid border-bottom">
+    <div class="container d-flex justify-content-between align-items-center pt-3">
         <ul>
-            <li class="ms_color">English <i class="fa-solid fa-angle-down"></i> </li>
+            <li class="ms_color d-inline">English <i class="fa-solid fa-angle-down"></i> </li>
         </ul>
 
         <div>
@@ -11,17 +11,42 @@
                     :title = "data.text"
                     :new = "data.new"
                 />
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-behance"></i></a>
-                <a href="#"><i class="fa-solid fa-basketball"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </ul>
         </div>
+        <div>
+            <!-- COMPONENT PER LE ICONE -->
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
 
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-brands fa-behance"></i>
+            </a>
+
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-solid fa-basketball"></i>
+            </a>
+
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-solid fa-square-full"></i>
+            </a>
+
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-brands fa-git"></i>
+            </a>
+
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a class="ms_color_icon text-decoration-none px-2" href="#">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+        </div>
     </div>
   </header>
 </template>
@@ -74,5 +99,9 @@ export default {
 
 <style lang="scss">
 @import'../styles/variables.scss';
+
+.ms_color_icon{
+    color: $iconColor;
+}
 
 </style>

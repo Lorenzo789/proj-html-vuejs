@@ -1,5 +1,5 @@
 <template>
-    <li class="d-inline px-3"> 
+    <li class="d-inline px-2"> 
         <a class="ms_color text-decoration-none" href="#"
             :class="{'ms_new': this.new == true}">
 
