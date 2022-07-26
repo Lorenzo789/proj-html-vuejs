@@ -177,7 +177,7 @@
                     </div>
                 </div>
 
-                                <div class="row">
+                <div class="row">
                     <div class="col-2">
                         <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
                         <p>descrizione</p>
@@ -236,6 +236,120 @@
                 <!-- COMPONENT BUTTON -->
             </div>
             <!-- COMPONENT CARD CORSI -->
+        </div>
+
+        <div class="container p-2">
+            <h1>Titolo</h1>
+            <p>Testo</p>
+            <div class="row">
+                <div class="col-3">dato</div>
+                <div class="col-3">dato</div>
+                <div class="col-3">dato</div>
+                <div class="col-3">dato</div>
+            </div>
+        </div>
+
+        <div class="container p-2">
+            <h1>Titolo</h1>
+            <p>Testo</p>
+            <label for="">email</label>
+            <!-- COMPONENT SEARCHBAR -->
+            <input type="text" placeholder="Search courses">
+            <button>Cerca</button>
+            <!-- COMPONENT SEARCHBAR -->
+        </div>
+
+        <div class="container p-2">
+            <div class="row">
+            <h1>Titolo</h1>
+            <p>Testo</p>
+                <div class="col-2">
+                    <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
+                    <p>descrizione</p>
+                    <h6>Titolino</h6>
+                    <span>ore</span>
+                    <span>costo</span>
+                </div>
+
+                <div class="col-2">
+                    <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
+                    <p>descrizione</p>
+                    <h6>Titolino</h6>
+                    <span>ore</span>
+                    <span>costo</span>
+                </div>
+
+                <div class="col-2">
+                    <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
+                    <p>descrizione</p>
+                    <h6>Titolino</h6>
+                    <span>stelline</span>
+                    <span>costo</span>
+                </div>
+
+                <div class="col-2">
+                    <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
+                    <p>descrizione</p>
+                    <h6>Titolino</h6>
+                    <span>stelline</span>
+                    <span>costo</span>
+                </div>
+
+                <div class="col-2">
+                    <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
+                    <p>descrizione</p>
+                    <h6>Titolino</h6>
+                    <span>ore</span>
+                    <span>costo</span>
+                </div>
+
+                <div class="col-2">
+                    <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
+                    <p>descrizione</p>
+                    <h6>Titolino</h6>
+                    <span>ore</span>
+                    <span>costo</span>
+                </div>
+
+                <div>carosello</div>
+            </div>
+        </div>
+
+        <div class="container p-2">
+            <div class="row">
+                <div class="col-6">
+                    <div class="col-6">
+                        <h6>Titolo</h6>
+                        <p>Testo</p>
+                        <!-- COMPONENT BUTTON -->
+                        <button>JOIN</button>
+                        <!-- COMPONENT BUTTON -->
+                    </div>
+                    <div class="col-6">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col-6">
+                        <h6>Titolo</h6>
+                        <p>Testo</p>
+                        <!-- COMPONENT BUTTON -->
+                        <button>JOIN</button>
+                        <!-- COMPONENT BUTTON -->
+                    </div>
+                    <div class="col-6">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-2">
+            <div class="container p-2">
+                <h1>Titotlo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut molestiae beatae dolorem, sequi odio rem facilis nemo ex exercitationem deleniti excepturi, quasi totam, voluptatibus officia eveniet laboriosam ipsa ut.</p>
+                <p>info</p>
+            </div>
         </div>
     </main>
 </template>
