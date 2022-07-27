@@ -1,22 +1,11 @@
 <template>
     <main class="container-fluid">
+
         <NavBarMain />
 
-        <div class="container p-2">
-            <div class="row">
-                <div class="col-7">
-                    <h1>TESTO</h1>
-                    <p>Altro testo</p>
-
-                    <!-- COMPONENT BUTTON -->
-                    <button>JOIN</button>
-                    <!-- COMPONENT BUTTON -->
-                </div>
-                <div class="col-5">
-                    <img src="../assets/images/base.png" alt="">
-                </div>
-            </div>
-        </div>
+        <SectionInvestingMain v-for="(element, index) in  sectionInvesting" :key="index"
+            :title="element.title"
+            :subTitle="element.subTitle"/>
 
         <div class="container p-2">
             <div>
@@ -339,11 +328,20 @@
 
 <script>
 import NavBarMain from "./NavBarMain.vue";
+import SectionInvestingMain from "./SectionInvestingMain.vue";
+
 export default {
     data: function () {
-        return {};
+        return {
+            sectionInvesting: [
+                {
+                    title: 'Start Investing in You',
+                    subTitle: 'With over 1200 courses in 18 subjects, youre guaranteed to find something thats right for you',
+                },
+            ],
+        };
     },
-    components: { NavBarMain }
+    components: { NavBarMain, SectionInvestingMain }
 }
 </script>
 
