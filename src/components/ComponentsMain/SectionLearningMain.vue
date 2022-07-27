@@ -5,7 +5,9 @@
                 <h1 class="ms_learning_fs fw-light">{{ title }}</h1>
                 <p class="fs-3 fw-light mb-5">{{ subTitle }}</p>
 
-                <ButtonComponent />
+                <ButtonComponent v-for="(element, index) in learningButton" :key="index"
+                    :textLearning="element.textLearning"
+                />
             </div>
             <div class="col-5">
                 
@@ -22,10 +24,24 @@ export default {
         subTitle: String,
         imgBg: String,
     },
-    components: { ButtonComponent }
+
+    components: { ButtonComponent },
+
+    data: function(){
+        return{
+            learningButton: [
+                {
+                    textLearning: 'Read More',
+                }
+            ],
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 
+    .ms_learning_fs{
+        font-size: 50px;
+    }
 </style>

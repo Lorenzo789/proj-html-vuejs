@@ -50,11 +50,12 @@
         <!-- SECTION COURSES TYPE -->
 
         <!-- SECTION LEARNING -->
-        <SectionLearningMain v-for="(element, index) in sectionLearning" :key="index"
-            :title="element.title"
-            :subTitle="element.subTitle"
-            :imgBg="element.imgBg"
-        />
+        <div class="container-fluid ms_bg">
+            <SectionLearningMain v-for="(element, index) in sectionLearning" :key="index"
+                :title="element.title"
+                :subTitle="element.subTitle"
+            />
+        </div>
         <!-- SECTION LEARNING -->
 
         <div class="container p-2 my-5">
@@ -323,7 +324,6 @@ export default {
                 {
                     title: 'Limitless learning, more possibilities',
                     subTitle: 'Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.',
-                    imgBg: require('../assets/images/Untitled-1-1-1-1-1.png'),
                 }
             ],
         };
@@ -365,4 +365,8 @@ export default {
         }
     }
 
+    .ms_bg{
+        background-image: url('../assets/images/Untitled-1-1-1-1-1.png');
+        padding: 110px;
+    }
 </style>
