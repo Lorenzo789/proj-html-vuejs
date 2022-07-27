@@ -1,12 +1,17 @@
 <template>
     <main class="container-fluid">
 
+        <!-- NAVBAR -->
         <NavBarMain />
+        <!-- NAVBAR -->
 
+        <!-- SECTION INVESTING -->
         <SectionInvestingMain v-for="(element, index) in  sectionInvesting" :key="index" :title="element.title"
             :subTitle="element.subTitle" 
         />
+        <!-- SECTION INVESTING -->
 
+        <!-- SECTION CARD PRESENTATION -->
         <div class="container p-2 my-5">
             <div class="row my-5">
                 <div class="ms_card">
@@ -38,14 +43,19 @@
                 </div>
             </div>
         </div>
+        <!-- SECTION CARD PRESENTATION -->
 
+        <!-- SECTION COURSES TYPE -->
         <SectionListCoursesMain />
+        <!-- SECTION COURSES TYPE -->
 
+        <!-- SECTION LEARNING -->
         <SectionLearningMain v-for="(element, index) in sectionLearning" :key="index"
             :title="element.title"
             :subTitle="element.subTitle"
             :imgBg="element.imgBg"
         />
+        <!-- SECTION LEARNING -->
 
         <div class="container p-2 my-5">
             <h1>Recent courses</h1>
