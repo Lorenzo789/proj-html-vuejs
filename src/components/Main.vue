@@ -3,69 +3,38 @@
 
         <NavBarMain />
 
-        <SectionInvestingMain v-for="(element, index) in  sectionInvesting" :key="index"
-            :title="element.title"
-            :subTitle="element.subTitle"/>
+        <SectionInvestingMain v-for="(element, index) in  sectionInvesting" :key="index" :title="element.title"
+            :subTitle="element.subTitle" />
 
-        <div class="container p-2">
-            <div>
-                <i class="fa-solid fa-earth-europe"></i>
-                <h3>Titolino</h3>
-                <p>testo</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-tv"></i>
-                <h3>Titolino</h3>
-                <p>testo</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-calendar-check"></i>
-                <h3>Titolino</h3>
-                <p>testo</p>
-            </div>
-        </div>
-
-        <div class="container p-2">
-            <div class="row">
-                <div class="col-10">
-                    <img src="../assets/images/cat_1-1540x750.jpg" alt="">
-                    <h6>titolo</h6>
-                    <p>testo</p>
+        <div class="container p-2 my-5">
+            <div class="row my-5">
+                <div class="ms_card">
+                    <i class="fa-solid fa-earth-europe ms_fs_icon"></i>
+                    <h5>Worldwide Recognize</h5>
+                    <p>Our online courses certificates can be used around the world and also in most popular
+                        universities and companies
+                    </p>
                 </div>
-                <div class="col-2">
-                    <div>
-                        <img src="../assets/images/cat_2-272x161.jpg" alt="">
-                        <h6>titolo</h6>
-                        <p>testo</p>
-                    </div>
-                    <div>
-                        <img src="../assets/images/cat_3-370x155.jpg" alt="">
-                        <h6>titolo</h6>
-                        <p>testo</p>
-                    </div>
+                <div class="ms_card">
+                    <i class="fa-solid fa-tv ms_fs_icon"></i>
+                    <h5>Mostly online Learning (sd)</h5>
+                    <p>Masterstudy online certificates can be obtained in a range of specialized areas and typically
+                        take about a year to complete
+                    </p>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <img src="../assets/images/cat_4-370x155.jpg" alt="">
-                    <h6>titolo</h6>
-                    <p>testo</p>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/cat_5-370x155.jpg" alt="">
-                    <h6>titolo</h6>
-                    <p>testo</p>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/cat_6-370x155.jpg" alt="">
-                    <h6>titolo</h6>
-                    <p>testo</p>
+                <div class="ms_card">
+                    <i class="fa-solid fa-calendar-check ms_fs_icon"></i>
+                    <h5>Graduate in as little as 1 Year</h5>
+                    <p>Online post graduate certificates are a popular way to develop your professional
+                        qualifications of Masterstudy
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="container p-2">
+        <SectionListCoursesMain />
+
+        <div class="container p-2 my-5">
             <div class="row">
                 <div class="col-7">
                     <h1>TESTO</h1>
@@ -81,7 +50,7 @@
             </div>
         </div>
 
-        <div class="container p-2">
+        <div class="container p-2 my-5">
             <h1>Recent courses</h1>
             <!-- COMPONENT GENERE CORSI -->
             <div>
@@ -198,7 +167,7 @@
                         <span>costo</span>
                     </div>
                 </div>
-                
+
                 <!-- TENDINA LATERALE -->
                 <div></div>
                 <!-- TENDINA LATERALE -->
@@ -210,7 +179,7 @@
             <!-- COMPONENT CARD CORSI -->
         </div>
 
-        <div class="container p-2">
+        <div class="container p-2 my-5">
             <h1>Titolo</h1>
             <p>Testo</p>
             <div class="row">
@@ -221,7 +190,7 @@
             </div>
         </div>
 
-        <div class="container p-2">
+        <div class="container p-2 my-5">
             <h1>Titolo</h1>
             <p>Testo</p>
             <label for="">email</label>
@@ -231,10 +200,10 @@
             <!-- COMPONENT SEARCHBAR -->
         </div>
 
-        <div class="container p-2">
+        <div class="container p-2 my-5">
             <div class="row">
-            <h1>Titolo</h1>
-            <p>Testo</p>
+                <h1>Titolo</h1>
+                <p>Testo</p>
                 <div class="col-2">
                     <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
                     <p>descrizione</p>
@@ -287,7 +256,7 @@
             </div>
         </div>
 
-        <div class="container p-2">
+        <div class="container p-2 my-5">
             <div class="row">
                 <div class="col-6">
                     <div class="col-6">
@@ -316,10 +285,12 @@
             </div>
         </div>
 
-        <div class="container-fluid p-2">
+        <div class="container-fluid p-2 my-5">
             <div class="container p-2">
                 <h1>Titotlo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut molestiae beatae dolorem, sequi odio rem facilis nemo ex exercitationem deleniti excepturi, quasi totam, voluptatibus officia eveniet laboriosam ipsa ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut molestiae beatae dolorem, sequi
+                    odio rem facilis nemo ex exercitationem deleniti excepturi, quasi totam, voluptatibus officia
+                    eveniet laboriosam ipsa ut.</p>
                 <p>info</p>
             </div>
         </div>
@@ -329,6 +300,7 @@
 <script>
 import NavBarMain from "./NavBarMain.vue";
 import SectionInvestingMain from "./SectionInvestingMain.vue";
+import SectionListCoursesMain from "./SectionListCoursesMain.vue";
 
 export default {
     data: function () {
@@ -341,11 +313,32 @@ export default {
             ],
         };
     },
-    components: { NavBarMain, SectionInvestingMain }
+    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain }
 }
 </script>
 
 <style lang="scss" scoped>
 @import'../styles/variables.scss';
+
+    .ms_card{
+        background-color: $bgCard;
+        width: calc(100% / 3 - 25px);
+        padding: 30px;
+        margin-right: 25px;
+
+        h5{
+            font-weight: 100;
+        }
+
+        p{
+            color: $textColor;
+        }
+
+        .ms_fs_icon{
+            font-size: 60px;
+            color: $colorButton;
+            margin-bottom: 20px;
+        }
+    }
 
 </style>

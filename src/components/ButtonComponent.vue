@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- COMPONENT BUTTON -->
+
     <button>{{ text }} {{ textInvesting }}</button>
-    <!-- COMPONENT BUTTON -->
+
   </div>
 </template>
 
