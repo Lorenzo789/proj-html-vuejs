@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <button>{{ text }} {{ textInvesting }}</button>
+    <button>{{ text }} {{ textInvesting }} {{ textLearning }}</button>
 
   </div>
 </template>
@@ -11,6 +11,7 @@ export default {
   props: {
     text: String,
     textInvesting: String,
+    textLearning: String,
   }
 }
 </script>
