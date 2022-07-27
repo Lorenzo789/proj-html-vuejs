@@ -106,6 +106,15 @@
         </div>
         <!-- SECTION RECENT COURSES -->
 
+
+
+
+        <!-- !ARRIVATO QUI! -->
+
+        
+
+
+        <!-- WE ARE PROUD -->
         <div class="container p-2 my-5">
             <h1>Titolo</h1>
             <p>Testo</p>
@@ -116,7 +125,9 @@
                 <div class="col-3">dato</div>
             </div>
         </div>
+        <!-- WE ARE PROUD -->
 
+        <!-- SEARCHBAR WE ARE PROUD -->
         <div class="container p-2 my-5">
             <h1>Titolo</h1>
             <p>Testo</p>
@@ -126,7 +137,10 @@
             <button>Cerca</button>
             <!-- COMPONENT SEARCHBAR -->
         </div>
+        <!-- SEARCHBAR WE ARE PROUD -->
 
+
+        <!-- POPULAR COURSES -->
         <div class="container p-2 my-5">
             <div class="row">
                 <h1>Titolo</h1>
@@ -182,7 +196,9 @@
                 <div>carosello</div>
             </div>
         </div>
+        <!-- POPULAR COURSES -->
 
+        <!-- INSTRUCTOR/BUSINESS -->
         <div class="container p-2 my-5">
             <div class="row">
                 <div class="col-6">
@@ -211,7 +227,9 @@
                 </div>
             </div>
         </div>
+        <!-- INSTRUCTOR/BUSINESS -->
 
+        <!-- COME AS YOU ARE -->
         <div class="container-fluid p-2 my-5">
             <div class="container p-2">
                 <h1>Titotlo</h1>
@@ -221,6 +239,7 @@
                 <p>info</p>
             </div>
         </div>
+        <!-- COME AS YOU ARE -->
     </main>
 </template>
 
