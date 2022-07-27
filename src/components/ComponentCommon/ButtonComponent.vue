@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <button>{{ text }} {{ textInvesting }} {{ textLearning }}</button>
+    <button>{{ text }} {{ textInvesting }} {{ textLearning }} {{ mainText }}</button>
 
   </div>
 </template>
@@ -12,6 +12,7 @@ export default {
     text: String,
     textInvesting: String,
     textLearning: String,
+    mainText: String,
   }
 }
 </script>

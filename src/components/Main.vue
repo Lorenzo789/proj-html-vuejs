@@ -59,7 +59,7 @@
         <!-- SECTION LEARNING -->
 
         <!-- SECTION RECENT COURSES -->
-        <div class="container-fluid p-2 my-5">
+        <div class="container-fluid p-5 my-5 position-relative">
 
             <h1 class="text-center mb-5">Recent courses</h1>
 
@@ -87,13 +87,19 @@
             <!-- COMPONENT CARD CORSI -->
 
             <!-- TENDINA LATERALE -->
-            <div></div>
+            <div class="p-3 border text-center position-absolute bottom-0 end-0 shadow p-3 mb-5 bg-body rounded">
+                <div><i class="fa-solid fa-tv p-2"></i></div>
+                <div><i class="fa-solid fa-futbol p-2"></i></div>
+                <div><i class="fa-solid fa-wrench p-2"></i></div>
+                <div><i class="fa-solid fa-cart-shopping p-2"></i></div>
+                <div><i class="fa-solid fa-mobile-screen p-2"></i></div>
+            </div>
             <!-- TENDINA LATERALE -->
 
-            <div>
-                <!-- COMPONENT BUTTON -->
-                <button>JOIN</button>
-                <!-- COMPONENT BUTTON -->
+            <div class="text-center">
+                <ButtonComponent v-for="(text, index) in mainBtnText" :key="index"
+                    :mainText="text.mainText"
+                />
             </div>
         </div>
         <!-- SECTION RECENT COURSES -->
@@ -223,6 +229,7 @@ import SectionListCoursesMain from "./ComponentsMain/SectionListCoursesMain.vue"
 import SectionLearningMain from "./ComponentsMain/SectionLearningMain.vue";
 import CoursesGenre from "./ComponentsMain/CoursesGenre.vue";
 import CardGenre from "./ComponentsMain/CardGenre.vue";
+import ButtonComponent from "./ComponentCommon/ButtonComponent.vue";
 
 export default {
     data: function () {
@@ -403,9 +410,14 @@ export default {
                     special: false,
                 },
             ],
+            mainBtnText: [
+                {
+                    mainText: 'Show All',
+                }
+            ],
         };
     },
-    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre }
+    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre, ButtonComponent }
 }
 </script>
 
