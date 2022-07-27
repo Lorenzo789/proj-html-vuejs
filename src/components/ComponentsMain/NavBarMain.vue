@@ -1,7 +1,7 @@
 <template>
     <div class="container p-2 d-flex justify-content-between align-items-baseline mt-3">
 
-    <img class="align-self-center" src="../assets/images/MasterStudy_logo.svg" alt="">
+    <img class="align-self-center" src="../../assets/images/MasterStudy_logo.svg" alt="">
 
     <div class="d-flex align-items-baseline">
         <p class="ms_color ms_fs text-uppercase me-2"><i class="fa-solid fa-bars ms_fs"></i> Category</p>
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import'../styles/variables.scss';
+@import'../../styles/variables.scss';
     .ms_fs{
         font-size: 14px;
     }

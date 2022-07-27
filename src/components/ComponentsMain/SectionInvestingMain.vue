@@ -10,11 +10,11 @@
 
             </div>
             <div class="col-6 mt-5 position-relative">
-                <img class="ms_img" src="../assets/images/base.png" alt="">
-                <img class="ms_book1" src="../assets/images/book1.png" alt="">
-                <img class="ms_book2" src="../assets/images/book2.png" alt="">
-                <img class="ms_magnifier" src="../assets/images/magnifier.png" alt="">
-                <img class="ms_bubble" src="../assets/images/bubblespeech.png" alt="">
+                <img class="ms_img" src="../../assets/images/base.png" alt="">
+                <img class="ms_book1" src="../../assets/images/book1.png" alt="">
+                <img class="ms_book2" src="../../assets/images/book2.png" alt="">
+                <img class="ms_magnifier" src="../../assets/images/magnifier.png" alt="">
+                <img class="ms_bubble" src="../../assets/images/bubblespeech.png" alt="">
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import'../styles/variables.scss';
+@import'../../styles/variables.scss';
 
     .ms_investing_fs{
         font-size: 65px;
