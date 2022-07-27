@@ -4,30 +4,37 @@
         <NavBarMain />
 
         <SectionInvestingMain v-for="(element, index) in  sectionInvesting" :key="index" :title="element.title"
-            :subTitle="element.subTitle" />
+            :subTitle="element.subTitle" 
+        />
 
         <div class="container p-2 my-5">
             <div class="row my-5">
                 <div class="ms_card">
-                    <i class="fa-solid fa-earth-europe ms_fs_icon"></i>
-                    <h5>Worldwide Recognize</h5>
-                    <p>Our online courses certificates can be used around the world and also in most popular
-                        universities and companies
-                    </p>
+                    <div>
+                        <i class="fa-solid fa-earth-europe ms_fs_icon"></i>
+                        <h5>Worldwide Recognize</h5>
+                        <p>Our online courses certificates can be used around the world and also in most popular
+                            universities and companies
+                        </p>
+                    </div>
                 </div>
                 <div class="ms_card">
-                    <i class="fa-solid fa-tv ms_fs_icon"></i>
-                    <h5>Mostly online Learning (sd)</h5>
-                    <p>Masterstudy online certificates can be obtained in a range of specialized areas and typically
-                        take about a year to complete
-                    </p>
+                    <div>
+                        <i class="fa-solid fa-tv ms_fs_icon"></i>
+                        <h5>Mostly online Learning (sd)</h5>
+                        <p>Masterstudy online certificates can be obtained in a range of specialized areas and typically
+                            take about a year to complete
+                        </p>
+                    </div>
                 </div>
                 <div class="ms_card">
-                    <i class="fa-solid fa-calendar-check ms_fs_icon"></i>
-                    <h5>Graduate in as little as 1 Year</h5>
-                    <p>Online post graduate certificates are a popular way to develop your professional
-                        qualifications of Masterstudy
-                    </p>
+                    <div>
+                        <i class="fa-solid fa-calendar-check ms_fs_icon"></i>
+                        <h5>Graduate in as little as 1 Year</h5>
+                        <p>Online post graduate certificates are a popular way to develop your professional
+                            qualifications of Masterstudy
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -318,11 +325,20 @@ export default {
 <style lang="scss" scoped>
 @import'../styles/variables.scss';
 
+    .ms_card:hover{
+        margin-top: -50px;
+        transition: margin-top 1s;
+        cursor: pointer;
+    }
+
     .ms_card{
-        background-color: $bgCard;
         width: calc(100% / 3 - 25px);
-        padding: 30px;
         margin-right: 25px;
+
+        div{
+            background-color: $bgCard;
+            padding: 30px;
+        }
 
         h5{
             font-weight: 100;
