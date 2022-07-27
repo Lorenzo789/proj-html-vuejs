@@ -58,134 +58,45 @@
         </div>
         <!-- SECTION LEARNING -->
 
-        <div class="container p-2 my-5">
-            <h1>Recent courses</h1>
-            <!-- COMPONENT GENERE CORSI -->
-            <div>
-                <ul>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
-                    <li>g</li>
-                </ul>
-            </div>
-            <!-- COMPONENT GENERE CORSI -->
+        <!-- SECTION RECENT COURSES -->
+        <div class="container-fluid p-2 my-5">
+
+            <h1 class="text-center mb-5">Recent courses</h1>
+
+            <ul class="text-center mb-5">
+                <CoursesGenre v-for="(element, index) in genreCourse" :key="index"
+                    :nameGenre="element.genre"
+                    :selected="element.selected"
+                />
+            </ul>
 
             <!-- COMPONENT CARD CORSI -->
+            <div class="d-flex flex-wrap justify-content-between">
+                <CardGenre v-for="(card, index) in genreCard" :key="index"
+                    :imgUrl="card.imgUrl"
+                    :description="card.description"
+                    :title="card.title"
+                    :hour="card.hour"
+                    :stars="card.stars"
+                    :cost="card.cost"
+                    :new="card.new"
+                    :hot="card.hot"
+                    :special="card.special"
+                />
+            </div>
+            <!-- COMPONENT CARD CORSI -->
+
+            <!-- TENDINA LATERALE -->
+            <div></div>
+            <!-- TENDINA LATERALE -->
+
             <div>
-                <div class="row">
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg" alt="">
-                        <p>descrizione</p>
-                        <h6>Titolino</h6>
-                        <span>ore</span>
-                        <span>costo</span>
-                    </div>
-                </div>
-
-                <!-- TENDINA LATERALE -->
-                <div></div>
-                <!-- TENDINA LATERALE -->
-
                 <!-- COMPONENT BUTTON -->
                 <button>JOIN</button>
                 <!-- COMPONENT BUTTON -->
             </div>
-            <!-- COMPONENT CARD CORSI -->
         </div>
+        <!-- SECTION RECENT COURSES -->
 
         <div class="container p-2 my-5">
             <h1>Titolo</h1>
@@ -310,6 +221,8 @@ import NavBarMain from "./ComponentsMain/NavBarMain.vue";
 import SectionInvestingMain from "./ComponentsMain/SectionInvestingMain.vue";
 import SectionListCoursesMain from "./ComponentsMain/SectionListCoursesMain.vue";
 import SectionLearningMain from "./ComponentsMain/SectionLearningMain.vue";
+import CoursesGenre from "./ComponentsMain/CoursesGenre.vue";
+import CardGenre from "./ComponentsMain/CardGenre.vue";
 
 export default {
     data: function () {
@@ -326,9 +239,173 @@ export default {
                     subTitle: 'Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.',
                 }
             ],
+            genreCourse: [
+                {
+                    genre: 'All Categories',
+                    selected: true,
+                },
+                {
+                    genre: 'Art',
+                    selected: false,
+                },
+                {
+                    genre: 'Exercise',
+                    selected: false,
+                },
+                {
+                    genre: 'Material Design',
+                    selected: false,
+                },
+                {
+                    genre: 'Music',
+                    selected: false,
+                },
+                {
+                    genre: 'Photography',
+                    selected: false,
+                },
+                {
+                    genre: 'Software Development',
+                    selected: false,
+                },
+            ],
+            genreCard: [
+                {
+                    imgUrl: require('../assets/images/photo-1461749280684-dccba630e2f6-272x161.jpeg'),
+                    description: 'Apache>',
+                    title: 'Web Coding and Apache Basics',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: 'Free',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/cat_2-272x161.jpg'),
+                    description: 'Art>',
+                    title: 'Real Things Art Painting By Jason Ni',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: '$45',
+                    new: true,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/course-preview-272x161.jpg'),
+                    description: 'Software Development>',
+                    title: 'Basics of Masterstudy',
+                    hour: '',
+                    stars: '★★★★★ 5',
+                    cost: 'Free',
+                    new: false,
+                    hot: true,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/photo-1496307042754-b4aa456c4a2d-272x161.jpeg'),
+                    description: 'Electronic>',
+                    title: 'How To Be a DJ? Make Electronic Music',
+                    hour: '',
+                    stars: '★★★★★ 5',
+                    cost: '$49',
+                    new: false,
+                    hot: false,
+                    special: true,
+                },
+                {
+                    imgUrl: require('../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg'),
+                    description: 'Communication>',
+                    title: 'Design Instrument For Communication',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: '',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/cathryn-lavery-67852-unsplash-272x161.jpg'),
+                    description: 'Art>',
+                    title: 'Make your Concept Right and Beautiful',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: '$70',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/photo-1475452779376-caebfb988090-272x161.jpeg'),
+                    description: 'Bicycling>',
+                    title: 'Road Bike Manual or How to Be a Champion',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: '$20',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/cristian-grecu-762012-unsplash-min-scaled-272x161.jpg'),
+                    description: 'Documentary>',
+                    title: 'How to Make Beautiful Landscape Photos?',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: '$60',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/landscape-272x161.jpg'),
+                    description: 'Art>',
+                    title: 'Let`s paint Van Gogh`s Starry Night',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: '$79',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+                {
+                    imgUrl: require('../assets/images/12345-1-272x161.png'),
+                    description: 'Nvidia>',
+                    title: 'Nvidia and UE4 Technologies Practice',
+                    hour: '',
+                    stars: '★★★★★ 5',
+                    cost: 'Free',
+                    new: false,
+                    hot: false,
+                    special: true,
+                },
+                {
+                    imgUrl: require('../assets/images/jakob-owens-198234-unsplash-min-1-272x161.png'),
+                    description: 'Art>',
+                    title: 'How to Work with Legendary Red camera?',
+                    hour: '6 hours',
+                    stars: '',
+                    cost: 'Free',
+                    new: false,
+                    hot: false,
+                    special: true,
+                },
+                {
+                    imgUrl: require('../assets/images/promo_tf-272x161.jpg'),
+                    description: 'Software Development>',
+                    title: 'MasterStudy Mobile LMS App',
+                    hour: '2 hours',
+                    stars: '',
+                    cost: 'Free',
+                    new: false,
+                    hot: false,
+                    special: false,
+                },
+            ],
         };
     },
-    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain }
+    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre }
 }
 </script>
 
