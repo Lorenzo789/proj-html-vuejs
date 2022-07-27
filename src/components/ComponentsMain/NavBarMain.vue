@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import SearchBarComponent from './SearchBarComponent.vue';
-import ButtonComponent from './ButtonComponent.vue';
+import SearchBarComponent from '../ComponentCommon/SearchBarComponent.vue';
+import ButtonComponent from '../ComponentCommon/ButtonComponent.vue';
 export default {
     components: { SearchBarComponent, ButtonComponent },
     data: function(){

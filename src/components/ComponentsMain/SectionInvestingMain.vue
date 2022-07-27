@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ButtonComponent from './ButtonComponent.vue';
+import ButtonComponent from '../ComponentCommon/ButtonComponent.vue';
 export default {
 
     props: {

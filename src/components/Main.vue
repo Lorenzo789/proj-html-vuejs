@@ -34,21 +34,11 @@
 
         <SectionListCoursesMain />
 
-        <div class="container p-2 my-5">
-            <div class="row">
-                <div class="col-7">
-                    <h1>TESTO</h1>
-                    <p>Altro testo</p>
-
-                    <!-- COMPONENT BUTTON -->
-                    <button>JOIN</button>
-                    <!-- COMPONENT BUTTON -->
-                </div>
-                <div class="col-5">
-                    <img src="../assets/images/Untitled-1-1-1-1-1.png" alt="">
-                </div>
-            </div>
-        </div>
+        <SectionLearningMain v-for="(element, index) in sectionLearning" :key="index"
+            :title="element.title"
+            :subTitle="element.subTitle"
+            :imgBg="element.imgBg"
+        />
 
         <div class="container p-2 my-5">
             <h1>Recent courses</h1>
@@ -298,9 +288,10 @@
 </template>
 
 <script>
-import NavBarMain from "./NavBarMain.vue";
-import SectionInvestingMain from "./SectionInvestingMain.vue";
-import SectionListCoursesMain from "./SectionListCoursesMain.vue";
+import NavBarMain from "./ComponentsMain/NavBarMain.vue";
+import SectionInvestingMain from "./ComponentsMain/SectionInvestingMain.vue";
+import SectionListCoursesMain from "./ComponentsMain/SectionListCoursesMain.vue";
+import SectionLearningMain from "./ComponentsMain/SectionLearningMain.vue";
 
 export default {
     data: function () {
@@ -311,9 +302,16 @@ export default {
                     subTitle: 'With over 1200 courses in 18 subjects, youre guaranteed to find something thats right for you',
                 },
             ],
+            sectionLearning: [
+                {
+                    title: 'Limitless learning, more possibilities',
+                    subTitle: 'Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.',
+                    imgBg: require('../assets/images/Untitled-1-1-1-1-1.png'),
+                }
+            ],
         };
     },
-    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain }
+    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain }
 }
 </script>
 
