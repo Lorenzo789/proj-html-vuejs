@@ -1,8 +1,11 @@
 <template>
   <div>
 
-    <input type="text" :placeholder="text">
-    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    <input type="text" :placeholder="text, placeHolder">
+    <button>
+      <i class="fa-solid" :class="{'fa-magnifying-glass': this.content == ''}"></i>
+      {{ content }}
+    </button>
 
   </div>
 </template>
@@ -11,6 +14,8 @@
 export default {
     props: {
       text: String,
+      content: String,
+      placeHolder: String,
     }
 }
 </script>

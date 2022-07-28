@@ -7,7 +7,8 @@
         <p class="ms_color ms_fs text-uppercase me-2"><i class="fa-solid fa-bars ms_fs"></i> Category</p>
         
         <SearchBarComponent v-for="(info, index) in navBarSearch" :key="index"
-            :text="info.text"/>
+            :text="info.text"
+            :content="info.content"/>
     </div>
 
     <div class="d-flex align-items-baseline">
@@ -36,6 +37,7 @@ export default {
             navBarSearch: [
                 {
                     text: 'Search courses',
+                    content: '',
                 }
             ],
             buttonContent: [

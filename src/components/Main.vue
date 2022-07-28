@@ -115,30 +115,14 @@
 
 
         <!-- WE ARE PROUD -->
-        <div class="container p-2 my-5">
-            <h1>Titolo</h1>
-            <p>Testo</p>
-            <div class="row">
-                <div class="col-3">dato</div>
-                <div class="col-3">dato</div>
-                <div class="col-3">dato</div>
-                <div class="col-3">dato</div>
-            </div>
-        </div>
+        <WeAreProud v-for="(data, index) in dataWeAreProud" :key="index"
+            :students="data.students"
+            :courses="data.courses"
+            :videoHours="data.videoHours"
+            :reachedCountries="data.reachedCountries"
+            :bgPath="data.bgPath"
+        />
         <!-- WE ARE PROUD -->
-
-        <!-- SEARCHBAR WE ARE PROUD -->
-        <div class="container p-2 my-5">
-            <h1>Titolo</h1>
-            <p>Testo</p>
-            <label for="">email</label>
-            <!-- COMPONENT SEARCHBAR -->
-            <input type="text" placeholder="Search courses">
-            <button>Cerca</button>
-            <!-- COMPONENT SEARCHBAR -->
-        </div>
-        <!-- SEARCHBAR WE ARE PROUD -->
-
 
         <!-- POPULAR COURSES -->
         <div class="container p-2 my-5">
@@ -251,6 +235,7 @@ import SectionLearningMain from "./ComponentsMain/SectionLearningMain.vue";
 import CoursesGenre from "./ComponentsMain/CoursesGenre.vue";
 import CardGenre from "./ComponentsMain/CardGenre.vue";
 import ButtonComponent from "./ComponentCommon/ButtonComponent.vue";
+import WeAreProud from "./ComponentsMain/WeAreProud.vue";
 
 export default {
     data: function () {
@@ -432,9 +417,18 @@ export default {
                     mainText: 'Show All',
                 }
             ],
+            dataWeAreProud: [
+                {
+                    students: 2000,
+                    courses: 950,
+                    videoHours: 1600,
+                    reachedCountries: 150,
+                    bgPath: require('../assets/images/we_proud.png'),
+                }
+            ],
         };
     },
-    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre, ButtonComponent }
+    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre, ButtonComponent, WeAreProud }
 }
 </script>
 
