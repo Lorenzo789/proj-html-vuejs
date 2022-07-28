@@ -56,11 +56,11 @@
 
                     <div class="row">
                         <div class="col-6">
-                            immagine<img src="" alt="">
+                            <img src="../assets/images/photo-1490376840453-5f616fbebe5b-50x50.jpeg" alt="">
                         </div>
                         <div class="col-6">
-                            <p>testo immagine</p>
-                            <span>data</span>
+                            <p>Those other college expenses you Aren't thinking about</p>
+                            <span>--June 3, 2015</span>
                         </div>
                     </div>
                 </div>
