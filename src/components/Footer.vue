@@ -4,23 +4,27 @@
             <div class="row">
                 <!-- COMPONENT -->
                 <div class="col-3">About
-                    <p>testo</p>
-                    <span>icona</span>
-                    <span>icona</span>
-                    <span>icona</span>
+                    <p>
+                        <a href="#">MasterStudy</a> is education WordPress theme featured by Learning Managment Sistem (LMS) for online education. Developed by <a href="#">Stylemix Themes</a>
+                    </p>
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
                 </div>
                 <!-- COMPONENT -->
 
                 <!-- COMPONENT -->
                 <div class="col-3">Contact
                     <div>
-                        indirizzo
+                        USA California 20, First Avenue
+                        California
                     </div>
                     <div>
-                        contatti
+                        tel.:+1 212 458 300 32
+                        Fax.:+1 212 375 24 14
                     </div>
                     <div>
-                        mail
+                        info@masterstudy.com
                     </div>
                 </div>
                 <!-- COMPONENT -->
@@ -28,12 +32,12 @@
                 <!-- COMPONENT -->
                 <div class="col-3">Pages
                     <ul>
-                        <li>a</li>
-                        <li>b</li>
-                        <li>c</li>
-                        <li>d</li>
-                        <li>e</li>
-                        <li>f</li>
+                        <li>Blo</li>
+                        <li>Home</li>
+                        <li>ShortCodes</li>
+                        <li>Courses</li>
+                        <li>Membership A..</li>
+                        <li>Typhography</li>
                     </ul>
                 </div>
                 <!-- COMPONENT -->
@@ -42,11 +46,11 @@
                 <div class="col-3">Blog
                     <div class="row">
                         <div class="col-6">
-                            immagine<img src="" alt="">
+                            <img src="../assets/images/photo-1517520287167-4bbf64a00d66-50x50.jpeg" alt="">
                         </div>
                         <div class="col-6">
-                            <p>testo immagine</p>
-                            <span>data</span>
+                            <p>Our main target is to "Developing yourself as a Leader"</p>
+                            <span>--August 9, 2018</span>
                         </div>
                     </div>
 
