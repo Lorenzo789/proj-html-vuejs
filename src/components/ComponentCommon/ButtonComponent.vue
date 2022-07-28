@@ -1,8 +1,12 @@
 <template>
   <div>
+    <button>
 
-    <button>{{ text }} {{ textInvesting }} {{ textLearning }} {{ mainText }}</button>
+      {{ text }} {{ textInvesting }} {{ textLearning }} {{ mainText }} 
 
+      {{ instructorText }} {{ businessText }}
+
+    </button>
   </div>
 </template>
 
