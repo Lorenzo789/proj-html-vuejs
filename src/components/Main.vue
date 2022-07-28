@@ -1,5 +1,5 @@
 <template>
-    <main class="container-fluid">
+    <main>
 
         <!-- NAVBAR -->
         <NavBarMain />
@@ -93,7 +93,8 @@
         <!-- SECTION WE ARE PROUD -->
         <WeAreProud v-for="(data, index) in dataWeAreProud" :key="index" :students="data.students"
             :courses="data.courses" :videoHours="data.videoHours" :reachedCountries="data.reachedCountries"
-            :bgPath="data.bgPath" />
+            :bgPath="data.bgPath" 
+        />
         <!-- SECTION WE ARE PROUD -->
 
         <!-- SECTION POPULAR COURSES -->
@@ -150,15 +151,7 @@
         <!-- SECTION INSTRUCTOR/BUSINESS -->
 
         <!-- SECTION COME AS YOU ARE -->
-        <div class="container-fluid p-2 my-5">
-            <div class="container p-2">
-                <h1>Titotlo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut molestiae beatae dolorem, sequi
-                    odio rem facilis nemo ex exercitationem deleniti excepturi, quasi totam, voluptatibus officia
-                    eveniet laboriosam ipsa ut.</p>
-                <p>info</p>
-            </div>
-        </div>
+        <AsYouAre />
         <!-- SECTION COME AS YOU ARE -->
         // ! ARRIVATO QUI ! \\
     </main>
@@ -173,6 +166,7 @@ import CoursesGenre from "./ComponentsMain/CoursesGenre.vue";
 import CardGenre from "./ComponentsMain/CardGenre.vue";
 import ButtonComponent from "./ComponentCommon/ButtonComponent.vue";
 import WeAreProud from "./ComponentsMain/WeAreProud.vue";
+import AsYouAre from "./ComponentsMain/AsYouAre.vue";
 
 export default {
     data: function () {
@@ -433,7 +427,7 @@ export default {
             ],
         };
     },
-    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre, ButtonComponent, WeAreProud, ButtonComponent },
+    components: { NavBarMain, SectionInvestingMain, SectionListCoursesMain, SectionLearningMain, CoursesGenre, CardGenre, ButtonComponent, WeAreProud, ButtonComponent, AsYouAre },
 }
 </script>
 
